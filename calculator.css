@@ -1,0 +1,64 @@
+/* Resets margin and padding, sets box-sizing to border-box for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styles the container to take full width and height, centers its content */
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #FFEBD4; /* Light peach background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles the calculator */
+.calculator {
+    background: pink; /* Pink background color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Styles the input fields inside the calculator form */
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(240, 155, 169, 1), 5px 5px 15px rgba(235, 117, 137, 1); /* Neumorphic shadow effect */
+    background: transparent;
+    font-size: 20px;
+    color: #DC0083; /* Dark pink text color */
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* Styles the display section of the calculator */
+form .display {
+    display: flex;
+    justify-content: flex-end; /* Aligns display content to the right */
+    margin: 20px 0;
+}
+
+/* Styles the input fields in the display section */
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px; /* Large font size for display */
+    box-shadow: none; /* No shadow for display input */
+}
+
+/* Styles the equal sign button */
+form input.equal {
+    width: 145px; /* Larger width for equal sign button */
+}
+
+/* Styles the operator buttons */
+form input.operator {
+    color: #134B70; /* Blue text color for operators */
+}
